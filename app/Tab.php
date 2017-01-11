@@ -12,26 +12,21 @@ namespace App;
 class Tab
 {
     private static function revTab($nb){
-        $tab = array();
-
         $tab = range(1, $nb);
-        array_reverse($tab);
+        $tab = array_reverse($tab);
         return $tab;
     }
 
     private static function random($nb){
-        $tab = array();
-
-        $tab = range(1, $nb);
+       $tab = range(1, $nb);
         shuffle($tab);
         return $tab;
     }
 
     private static function fewUnique($nb){
         $tab = array();
-        $j = 1;
 
-        for ($i = 0; $i < $nb; $i++){
+       for ($i = 0; $i < $nb; $i++){
             $tab[$i] = rand(0, ($nb * 40 / 100));
         }
         return $tab;
@@ -44,9 +39,14 @@ class Tab
         for ($i = 0; $i < $nb; $i++){
             $tab[$i] = $i;
             if ($j == 5){
-                $tab[$i - rand(0, 4)] = $tab[$i - rand(0, 4)];
-                $j = 0;
+                $j = rand(0, 4);
+                while (($k = rand(0, 4)) == $j);
+                $tmp = $tab[$i - $j];
+                $tab[$i - $j] = $tab[$i - $k];
+                $tab[$i - $k] = $tmp;
+                $j = 1;
             }
+            $j++;
         }
         return $tab;
     }
