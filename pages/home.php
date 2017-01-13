@@ -5,7 +5,7 @@ use App\Tab;
 
 $sort = new Sort();
 
-var_dump($sort->Selection(Tab::getTab(10)));
-Tab::getTab(10,'reverse');
-Tab::getTab(10,'nearlySorted');
-Tab::getTab(10,'random');
+/*var_dump($sort->Insertion(Tab::getTab(100))['cost']);
+var_dump($sort->Insertion(Tab::getTab(100,'reverse'))['cost']);
+var_dump($sort->Insertion(Tab::getTab(100,'nearlySorted'))['cost']);
+var_dump($sort->Insertion(Tab::getTab(100,'random'))['cost']);*/
