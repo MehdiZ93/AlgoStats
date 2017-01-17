@@ -15,11 +15,10 @@ class Tab
     
     public function __construct()
     {
-        //$this->tab = array();
         $this->tab['sort'][0] = $this->getTab(10);
         $this->tab['sort'][1] = $this->getTab(100);
         $this->tab['sort'][2] = $this->getTab(1000);
-        $this->tab['sort'][4] = $this->getTab(10000);
+        $this->tab['sort'][3] = $this->getTab(10000);
         $this->tab['rev'][0] = $this->getTab(10, 'reverse');
         $this->tab['rev'][1] = $this->getTab(100, 'reverse');
         $this->tab['rev'][2] = $this->getTab(1000, 'reverse');
@@ -32,6 +31,10 @@ class Tab
         $this->tab['rand'][1] = $this->getTab(100,'random');
         $this->tab['rand'][2] = $this->getTab(1000, 'random');
         $this->tab['rand'][3] = $this->getTab(10000, 'random');
+        $this->tab['unique'][0] = $this->getTab(10, 'fewUnique');
+        $this->tab['unique'][1] = $this->getTab(100,'fewUnique');
+        $this->tab['unique'][2] = $this->getTab(1000, 'fewUnique');
+        $this->tab['unique'][3] = $this->getTab(10000, 'fewUnique');
     }
 
     private static function revTab($nb){
