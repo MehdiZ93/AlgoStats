@@ -11,6 +11,29 @@ namespace App;
 
 class Tab
 {
+    public $tab;
+    
+    public function __construct()
+    {
+        //$this->tab = array();
+        $this->tab['sort'][0] = $this->getTab(10);
+        $this->tab['sort'][1] = $this->getTab(100);
+        $this->tab['sort'][2] = $this->getTab(1000);
+        $this->tab['sort'][4] = $this->getTab(10000);
+        $this->tab['rev'][0] = $this->getTab(10, 'reverse');
+        $this->tab['rev'][1] = $this->getTab(100, 'reverse');
+        $this->tab['rev'][2] = $this->getTab(1000, 'reverse');
+        $this->tab['rev'][3] = $this->getTab(10000, 'reverse');
+        $this->tab['nearly'][0] = $this->getTab(10, 'nearlySorted');
+        $this->tab['nearly'][1] = $this->getTab(100,'nearlySorted');
+        $this->tab['nearly'][2] = $this->getTab(1000, 'nearlySorted');
+        $this->tab['nearly'][3] = $this->getTab(10000, 'nearlySorted');
+        $this->tab['rand'][0] = $this->getTab(10, 'random');
+        $this->tab['rand'][1] = $this->getTab(100,'random');
+        $this->tab['rand'][2] = $this->getTab(1000, 'random');
+        $this->tab['rand'][3] = $this->getTab(10000, 'random');
+    }
+
     private static function revTab($nb){
         $tab = range(1, $nb);
         $tab = array_reverse($tab);
