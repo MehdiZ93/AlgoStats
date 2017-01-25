@@ -13,7 +13,20 @@ class Sort
 {
     public function Bubble($tab)
     {
-
+        $size = count($tab);
+        $n = 0;
+        for($i = 0; $i < $size; $i++) {
+            $n++;
+            for($j = 0; $j < $size - $i - 1; $j++) {
+                if($tab[$j + 1] < $tab[$j]) {
+                    $temp = $tab[$j];
+                    $tab[$j] = $tab[$j + 1];
+                    $tab[$j + 1] = $temp;
+                }
+            }
+        }
+        $array = array("tab" => $tab, "cost" => $n);
+        return $array;
     }
 
     public function Insertion($tab)
