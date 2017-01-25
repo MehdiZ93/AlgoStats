@@ -15,5 +15,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="marmiton" />
+    <orderEntry type="module" module-name="Marmiton" />
   </component>
 </module>

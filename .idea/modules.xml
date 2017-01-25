@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AlgoStats.iml" filepath="$PROJECT_DIR$/.idea/AlgoStats.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Marmiton/.idea/Marmiton.iml" filepath="$PROJECT_DIR$/../Marmiton/.idea/Marmiton.iml" />
       <module fileurl="file://$PROJECT_DIR$/../marmiton/.idea/marmiton.iml" filepath="$PROJECT_DIR$/../marmiton/.idea/marmiton.iml" />
     </modules>
   </component>
