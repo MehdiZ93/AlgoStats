@@ -17,5 +17,6 @@
     <orderEntry type="module" module-name="marmiton" />
     <orderEntry type="module" module-name="Marmiton" />
     <orderEntry type="module" module-name="Marmiton" />
+    <orderEntry type="module" module-name="blog" />
   </component>
 </module>

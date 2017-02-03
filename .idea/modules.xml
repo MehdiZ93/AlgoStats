@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AlgoStats.iml" filepath="$PROJECT_DIR$/.idea/AlgoStats.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Marmiton/.idea/Marmiton.iml" filepath="$PROJECT_DIR$/../Marmiton/.idea/Marmiton.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../marmiton/.idea/marmiton.iml" filepath="$PROJECT_DIR$/../marmiton/.idea/marmiton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blog/.idea/blog.iml" filepath="$PROJECT_DIR$/../blog/.idea/blog.iml" />
     </modules>
   </component>
 </project>

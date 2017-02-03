@@ -16,12 +16,12 @@ class Sort
         $size = count($tab);
         $n = 0;
         for($i = 0; $i < $size; $i++) {
-            $n++;
             for($j = 0; $j < $size - $i - 1; $j++) {
                 if($tab[$j + 1] < $tab[$j]) {
                     $temp = $tab[$j];
                     $tab[$j] = $tab[$j + 1];
                     $tab[$j + 1] = $temp;
+                    $n++;
                 }
             }
         }
@@ -53,11 +53,11 @@ class Sort
         $size = sizeof($tab);
         for ($i = 0; $i < $size; $i++) {
             for ($j = $i + 1; $j < $size; $j++) {
-                $n++;
                 if ($tab[$i] > $tab[$j]) {
                     $tmp = $tab[$i];
                     $tab[$i] = $tab[$j];
                     $tab[$j] = $tmp;
+                    $n++;
                 }
             }
         }
